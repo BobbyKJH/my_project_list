@@ -1,34 +1,28 @@
 import React from "react";
-import styled from "styled-components";
-
-const Box = styled.div`
-  display: block;
-  height: 120px;
-`;
-
-const Container = styled.div`
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  margin: 0 auto;
-  height: 100px;
-  width: 90vw;
-  /* border: 1px solid black; */
-  border-radius: 20px;
-  background-color: #000;
-  transition: 1s;
-  &:hover {
-    background-color: #fff;
-  }
-`;
+import { HeaderStyle } from "../style/HeaderStyle";
 
 function Header() {
   return (
-    <Box>
-      <Container>1111</Container>
-    </Box>
+    <HeaderStyle>
+      <header>
+        <h1>프로젝트</h1>
+        <h2>
+          <span>자기소개</span>
+        </h2>
+        <h2>
+          <span>프로젝트 파일</span>
+          <nav>Subway</nav>
+          <nav>Go Together</nav>
+          <nav>Tour-Guide</nav>
+        </h2>
+        <h2>
+          <span>활용 기술</span>
+          <nav>React</nav>
+          <nav>CSS</nav>
+          <nav>JS</nav>
+        </h2>
+      </header>
+    </HeaderStyle>
   );
 }
 
